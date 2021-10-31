@@ -19,8 +19,6 @@ app.use("/departments", departments);
 app.use("/prescriptions", prescriptions);
 app.use("/advertisements", advertisements);
 
-//merge test
-
 app.listen(process.env.PORT, function () {
   console.log("Listening on http://localhost:" + process.env.PORT);
 });
