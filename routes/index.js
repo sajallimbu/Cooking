@@ -4,6 +4,7 @@ const products = require("./products");
 const users = require("./users");
 const prescriptions = require("./prescriptions");
 const departments = require("./departments");
+const file = require("./file")
 
 module.exports = {
   products,
@@ -11,5 +12,6 @@ module.exports = {
   doctors,
   advertisements,
   prescriptions,
-  departments
+  departments,
+  file
 };
