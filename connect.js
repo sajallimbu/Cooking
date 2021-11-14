@@ -24,4 +24,10 @@ var dbo = {
   },
 };
 
+setInterval(() => {
+  if (!dbConnection) {
+    dbo.connectToServer();
+  }
+}, 1000 * 60 * 60);
+
 module.exports = dbo;
