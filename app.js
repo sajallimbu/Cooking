@@ -4,9 +4,7 @@ const dbo = require("./connect");
 const upload = require("express-fileupload");
 const { users, products, doctors, departments, prescriptions, advertisements, file } = require("./routes");
 
-dbo.connectToServer(() => {
-  console.log("Database connected");
-});
+dbo.connectToServer();
 
 //MIDDLEWARES
 app.use(express.json());

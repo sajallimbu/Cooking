@@ -12,11 +12,11 @@ var dbo = {
   connectToServer: function (callback) {
     client.connect((err, db) => {
       if (err || !db) {
-        return callback(err);
+        console.log("Database connection failed!");;
+      } else {
+        dbConnection = db;
+        console.log("Database connected");
       }
-      dbConnection = db;
-
-      return callback();
     });
   },
   getDb: function () {
